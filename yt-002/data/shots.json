@@ -1,0 +1,316 @@
+{
+  "project": "YT-002",
+  "title": "彼氏猫には、妻がいた。",
+  "resolution": [1920, 1080],
+  "fps": 30,
+  "label": "AI生成・創作再現",
+  "characters": {
+    "SHIRO": "Shiro: a slender adult female domestic shorthair cat, pure white short coat with no markings at all, pale mint-green eyes, pink nose, pink inner ears, small neat head, medium-small build",
+    "TORA": "Tora: a large stocky adult male orange mackerel tabby domestic shorthair cat, warm ginger coat with darker orange stripes, a clear 'M' marking on the forehead, white chin and a small white chest patch, orange paws (not white), amber eyes, round full cheeks, orange tail with darker rings",
+    "MIKE": "Mike: an adult female calico domestic shorthair cat, white base coat with solid black and orange patches; black patch covering her left ear and surrounding her left eye, orange patch on her right ear, white muzzle, white chest and four white paws, black saddle patch on her back with an orange patch on her left hip, black tail with one orange band near the tip, yellow-green eyes, medium build, composed posture"
+  },
+  "cameras": {
+    "DOORCAM": "footage from a doorbell security camera, fisheye wide-angle lens distortion, high angle looking down at the doormat, slight digital noise and compression artifacts, flat daylight, fixed static camera",
+    "SECCAM": "footage from an indoor pet camera mounted high in a room corner, high-angle wide shot, slightly desaturated colors, mild compression artifacts, fixed static camera",
+    "PHONE": "handheld smartphone video, slight natural hand shake, natural window daylight, realistic home interior, shallow depth of field",
+    "PHONE_CLOSE": "handheld smartphone video at floor level, close-up, slight natural hand shake, natural window daylight, shallow depth of field",
+    "CARD": "text card (no generation)"
+  },
+  "style_suffix": "photorealistic live-action footage of real domestic cats, natural feline anatomy and proportions, natural cat behavior, all cats stay on four legs, real fur texture, no text on screen",
+  "negative": "human, person, human hands, human arms, fingers, human feet, clothing on cats, accessories, collar, standing on hind legs, bipedal, anthropomorphic, cartoon, anime, 3D render, CGI look, talking, mouth moving like speech, lip sync, human facial expression, smiling cat, eyebrows, extra legs, extra tails, missing legs, fused paws, deformed face, changing fur pattern, text, letters, subtitles, watermark, logo",
+  "shots": [
+    {
+      "id": "S01", "scene": 1, "start": 0.0, "end": 4.0, "camera": "DOORCAM", "cats": ["MIKE"],
+      "osd": {"cam": "CAM-01 玄関", "datetime": "2026/10/13 14:32:05"},
+      "action_ja": "玄関前のドアマットにミケが座り、インターホンのカメラをまっすぐ見上げる。ゆっくり首をかしげる。",
+      "prompt": "{MIKE} sits upright on a doormat in front of an apartment front door, looking straight up into the camera lens, then slowly tilts her head slightly. Outdoor corridor of a Japanese apartment building, concrete floor.",
+      "subs": [
+        {"start": 0.2, "end": 3.2, "style": "Notice", "text": "この動画はAIで生成した創作再現です"}
+      ],
+      "sfx": [
+        {"t": 0.0, "dur": 12.0, "key": "amb_corridor", "gain_db": -24},
+        {"t": 0.5, "key": "doorbell", "gain_db": -8}
+      ]
+    },
+    {
+      "id": "S02", "scene": 1, "start": 4.0, "end": 7.0, "camera": "PHONE", "cats": ["SHIRO"],
+      "action_ja": "ソファで丸くなっていたシロが顔を上げ、耳を玄関の方向へ回す。",
+      "prompt": "{SHIRO} is curled up on a light gray sofa, suddenly lifts her head, both ears rotate toward the left of frame (toward the front door), eyes wide and alert. Bright living room.",
+      "subs": [
+        {"start": 4.4, "end": 6.9, "style": "Shiro", "text": "シロ「…お客さん？」"}
+      ],
+      "sfx": [
+        {"t": 4.7, "key": "cat_chirp_shiro", "gain_db": -12}
+      ]
+    },
+    {
+      "id": "S03", "scene": 1, "start": 7.0, "end": 9.5, "camera": "PHONE_CLOSE", "cats": ["TORA"],
+      "action_ja": "ローテーブルの下で寝そべるトラ。瞳孔が開き、耳が後ろに倒れて固まる。",
+      "prompt": "Close-up of {TORA} lying under a low wooden coffee table, his pupils dilate wide and his ears flatten backward, body freezes completely still.",
+      "subs": [
+        {"start": 7.2, "end": 9.4, "style": "Tora", "text": "トラ「（この柄…まさか）」"}
+      ],
+      "sfx": [
+        {"t": 7.1, "key": "tension_hit_small", "gain_db": -14}
+      ]
+    },
+    {
+      "id": "S04", "scene": 1, "start": 9.5, "end": 12.0, "camera": "DOORCAM", "cats": ["MIKE"],
+      "osd": {"cam": "CAM-01 玄関", "datetime": "2026/10/13 14:32:11"},
+      "action_ja": "インターホン映像のミケにゆっくりデジタルズーム。ミケは瞬きせずカメラを見つめる。タイトル表示。",
+      "prompt": "{MIKE} sits perfectly still on the doormat staring unblinking into the camera lens, slow digital zoom-in toward her face.",
+      "subs": [
+        {"start": 9.6, "end": 12.0, "style": "Title", "text": "彼氏猫には、妻がいた。"}
+      ],
+      "sfx": [
+        {"t": 9.55, "key": "title_hit", "gain_db": -6}
+      ]
+    },
+    {
+      "id": "S05", "scene": 2, "start": 12.0, "end": 16.0, "camera": "PHONE", "cats": ["SHIRO", "TORA"],
+      "action_ja": "日の当たる窓辺に並んで座るシロとトラ。しっぽ同士が触れている。",
+      "prompt": "{SHIRO} and {TORA} sit side by side on a sunny windowsill, both facing the window, their tails gently touching, relaxed. Warm afternoon light, lace curtain.",
+      "subs": [
+        {"start": 12.2, "end": 14.0, "style": "Caption", "text": "3日前"},
+        {"start": 12.4, "end": 15.9, "style": "Narr", "text": "交際3か月。トラは毎週水曜にやってくる。"}
+      ],
+      "sfx": [
+        {"t": 12.0, "dur": 30.0, "key": "amb_room_day", "gain_db": -24},
+        {"t": 12.0, "dur": 15.0, "key": "bgm_warm", "gain_db": -22}
+      ]
+    },
+    {
+      "id": "S06", "scene": 2, "start": 16.0, "end": 20.0, "camera": "PHONE", "cats": ["SHIRO", "TORA"],
+      "action_ja": "トラがシロの頬に頭をこすりつける。シロはゆっくり瞬きする。",
+      "prompt": "{TORA} affectionately rubs his head against the cheek of {SHIRO} (head bunting), she responds with a slow blink and leans in slightly. Same sunny windowsill.",
+      "subs": [
+        {"start": 16.3, "end": 19.8, "style": "Tora", "text": "トラ「シロといる時間がいちばん落ち着くよ」"}
+      ],
+      "sfx": [
+        {"t": 16.2, "dur": 3.6, "key": "purr", "gain_db": -14}
+      ]
+    },
+    {
+      "id": "S07", "scene": 2, "start": 20.0, "end": 24.0, "camera": "PHONE", "cats": ["SHIRO", "TORA"],
+      "action_ja": "並んだ2つの陶器の皿で、シロとトラが一緒にごはんを食べる。",
+      "prompt": "{SHIRO} and {TORA} eat side by side from two small ceramic bowls on a kitchen floor mat, seen from a low three-quarter angle.",
+      "subs": [
+        {"start": 20.3, "end": 23.8, "style": "Shiro", "text": "シロ「週末も一緒にいられたらいいのに」"}
+      ],
+      "sfx": [
+        {"t": 20.2, "dur": 3.6, "key": "eating", "gain_db": -18}
+      ]
+    },
+    {
+      "id": "S08", "scene": 2, "start": 24.0, "end": 27.0, "camera": "PHONE_CLOSE", "cats": ["TORA"],
+      "action_ja": "トラが食べるのをやめ、耳が横を向き、目線がそれる。",
+      "prompt": "Close-up of {TORA} at a ceramic food bowl, he stops eating, his ears rotate sideways, and he looks away from the camera to the side, avoiding eye contact.",
+      "subs": [
+        {"start": 24.2, "end": 26.9, "style": "Tora", "text": "トラ「週末は…仕事が忙しくて」"}
+      ],
+      "sfx": [
+        {"t": 24.1, "key": "comic_pluck", "gain_db": -16}
+      ]
+    },
+    {
+      "id": "S09", "scene": 3, "start": 27.0, "end": 30.0, "camera": "PHONE_CLOSE", "cats": ["TORA"],
+      "action_ja": "ラグの上、トラの前足の横に置かれたスマホが光って振動する（画面の文字は編集で合成）。",
+      "prompt": "Floor-level close-up of a black smartphone lying face-up on a beige rug next to the orange striped front paw of {TORA}; the phone screen lights up with a plain bright glow and the phone vibrates on the rug. The cat's head turns quickly toward the phone.",
+      "subs": [
+        {"start": 27.3, "end": 29.9, "style": "Caption", "text": "着信：ミケ"}
+      ],
+      "sfx": [
+        {"t": 27.2, "dur": 2.7, "key": "phone_vibrate", "gain_db": -8}
+      ]
+    },
+    {
+      "id": "S10", "scene": 3, "start": 30.0, "end": 33.0, "camera": "PHONE_CLOSE", "cats": ["TORA"],
+      "action_ja": "トラが前足をすばやく振り下ろし、スマホの画面を肉球でぴたっと押さえる。",
+      "prompt": "Floor-level close-up: {TORA} quickly brings one front paw down flat on top of the glowing smartphone, covering the screen with his paw pad, and holds it there. Realistic cat paw, four toes visible, no fingers.",
+      "subs": [
+        {"start": 30.5, "end": 31.6, "style": "Comic", "text": "ペシッ"}
+      ],
+      "sfx": [
+        {"t": 30.5, "key": "comic_slap", "gain_db": -6}
+      ]
+    },
+    {
+      "id": "S11", "scene": 3, "start": 33.0, "end": 36.0, "camera": "PHONE", "cats": ["SHIRO"],
+      "action_ja": "シロがゆっくり振り向き、目を細め、耳が少し横に開く。",
+      "prompt": "{SHIRO} slowly turns her head toward the camera-right, her eyes narrow into a suspicious squint and her ears rotate slightly outward. Living room background softly blurred.",
+      "subs": [
+        {"start": 33.3, "end": 35.9, "style": "Shiro", "text": "シロ「…今の、だれ？」"}
+      ],
+      "sfx": [
+        {"t": 33.2, "key": "cat_low_shiro", "gain_db": -14}
+      ]
+    },
+    {
+      "id": "S12", "scene": 3, "start": 36.0, "end": 39.0, "camera": "PHONE_CLOSE", "cats": ["TORA"],
+      "action_ja": "トラがスマホの上にそのまま香箱座りでのっかり、何事もない顔でゆっくり瞬き。",
+      "prompt": "{TORA} settles down and sits in a loaf position directly on top of the smartphone, hiding it completely under his body, then gives a slow innocent blink toward the camera.",
+      "subs": [
+        {"start": 36.2, "end": 38.9, "style": "Tora", "text": "トラ「め、迷惑電話だよ。気にしないで」"}
+      ],
+      "sfx": []
+    },
+    {
+      "id": "S13", "scene": 3, "start": 39.0, "end": 42.0, "camera": "PHONE_CLOSE", "cats": ["TORA", "SHIRO"],
+      "action_ja": "スマホの上で香箱座りのトラ。振動に合わせて体が小刻みに揺れる。手前にぼけたシロの白い後頭部。",
+      "prompt": "{TORA} sits in a loaf position on the floor, his body jiggles slightly in short rhythmic bursts as if something underneath him is vibrating; he keeps a stiff innocent face. In the blurred foreground, the white back of the head and ears of {SHIRO}, watching him.",
+      "subs": [
+        {"start": 39.3, "end": 41.8, "style": "Comic", "text": "ブーッ…ブーッ…"},
+        {"start": 40.0, "end": 41.9, "style": "Aside", "text": "（まだ鳴っている）"}
+      ],
+      "sfx": [
+        {"t": 39.3, "dur": 1.0, "key": "phone_vibrate_muffled", "gain_db": -10},
+        {"t": 40.7, "dur": 1.0, "key": "phone_vibrate_muffled", "gain_db": -10}
+      ]
+    },
+    {
+      "id": "S14", "scene": 4, "start": 42.0, "end": 46.0, "camera": "DOORCAM", "cats": ["MIKE"],
+      "osd": {"cam": "CAM-01 玄関", "datetime": "2026/10/13 14:32:05"},
+      "action_ja": "冒頭と同じインターホン映像。ミケが座ってカメラを見上げる。",
+      "prompt": "{MIKE} sits upright on a doormat in front of an apartment front door, looking straight up into the camera lens. Outdoor corridor of a Japanese apartment building, concrete floor.",
+      "subs": [
+        {"start": 42.2, "end": 44.6, "style": "Caption", "text": "そして、今日"}
+      ],
+      "sfx": [
+        {"t": 42.0, "dur": 4.0, "key": "amb_corridor", "gain_db": -24},
+        {"t": 42.5, "key": "doorbell", "gain_db": -8},
+        {"t": 42.0, "dur": 15.0, "key": "bgm_suspense", "gain_db": -20}
+      ]
+    },
+    {
+      "id": "S15", "scene": 4, "start": 46.0, "end": 50.0, "camera": "PHONE_CLOSE", "cats": ["MIKE"],
+      "action_ja": "玄関ドアのペット用ドア（キャットフラップ）をミケが頭で押し開けて入ってくる。",
+      "prompt": "Low angle inside an apartment entryway: {MIKE} pushes her head through a plastic pet flap in the bottom of the front door and steps inside, the flap swinging behind her.",
+      "subs": [],
+      "sfx": [
+        {"t": 46.0, "dur": 11.0, "key": "amb_room_day", "gain_db": -26},
+        {"t": 46.8, "key": "cat_flap", "gain_db": -8},
+        {"t": 47.6, "key": "cat_flap", "gain_db": -14}
+      ]
+    },
+    {
+      "id": "S16", "scene": 4, "start": 50.0, "end": 54.0, "camera": "SECCAM", "cats": ["MIKE"],
+      "osd": {"cam": "CAM-02 廊下", "datetime": "2026/10/13 14:33:20"},
+      "action_ja": "廊下の天井カメラ。ミケがしっぽを立てて、ゆっくりこちらへ歩いてくる。",
+      "prompt": "{MIKE} walks slowly and steadily down a narrow apartment hallway toward the camera, tail held upright, calm and deliberate steps, wooden floor.",
+      "subs": [
+        {"start": 50.5, "end": 53.8, "style": "Mike", "text": "ミケ「やっぱり、ここにいたのね」"}
+      ],
+      "sfx": []
+    },
+    {
+      "id": "S17", "scene": 4, "start": 54.0, "end": 57.0, "camera": "PHONE", "cats": ["MIKE"],
+      "action_ja": "リビングの入口で立ち止まるミケ。正面を見据えたまま動かない。",
+      "prompt": "{MIKE} stops at the threshold of a living room doorway, standing on four legs, staring straight ahead without moving, only the tip of her tail twitches.",
+      "subs": [
+        {"start": 54.2, "end": 55.6, "style": "Mike", "text": "ミケ「あなた。」"},
+        {"start": 55.7, "end": 56.95, "style": "Shiro", "text": "シロ「…あなた？」"}
+      ],
+      "sfx": [
+        {"t": 54.1, "key": "cat_low_mike", "gain_db": -12}
+      ]
+    },
+    {
+      "id": "S18", "scene": 5, "start": 57.0, "end": 61.0, "camera": "SECCAM", "cats": ["MIKE", "SHIRO", "TORA"],
+      "osd": {"cam": "CAM-03 リビング", "datetime": "2026/10/13 14:33:31"},
+      "action_ja": "リビング全景。入口にミケ、ソファにシロ、床の中央でトラが固まる三角配置。",
+      "prompt": "Wide high-angle view of a living room: {MIKE} stands at the doorway on the left, {SHIRO} sits on a light gray sofa on the right, and {TORA} is frozen in the middle of the floor between them, looking back and forth.",
+      "subs": [
+        {"start": 57.3, "end": 60.8, "style": "Mike", "text": "ミケ「トラの妻、ミケです。」"}
+      ],
+      "sfx": [
+        {"t": 57.0, "dur": 15.0, "key": "amb_room_day", "gain_db": -26},
+        {"t": 57.05, "key": "tension_hit_small", "gain_db": -10}
+      ]
+    },
+    {
+      "id": "S19", "scene": 5, "start": 61.0, "end": 64.0, "camera": "PHONE", "cats": ["SHIRO"],
+      "action_ja": "シロの耳が横に倒れ（イカ耳）、しっぽの毛がぶわっと膨らむ。",
+      "prompt": "{SHIRO} on the sofa, her ears flatten sideways into airplane ears and her tail fur puffs up, body tense, eyes wide.",
+      "subs": [
+        {"start": 61.2, "end": 63.9, "style": "Shiro", "text": "シロ「妻…!? 独身だって言ってたよね？」"}
+      ],
+      "sfx": [
+        {"t": 61.1, "key": "cat_hiss_short", "gain_db": -12}
+      ]
+    },
+    {
+      "id": "S20", "scene": 5, "start": 64.0, "end": 68.0, "camera": "PHONE", "cats": ["TORA"],
+      "action_ja": "トラが慌てて後ずさりし、フローリングで足が空回り。ティッシュ箱にぶつかって倒す。",
+      "prompt": "{TORA} panics and scrambles backward on a slippery wooden floor, his paws slipping and skidding comically, then bumps into a tissue box which tips over. All four paws on the floor, natural cat movement.",
+      "subs": [
+        {"start": 64.2, "end": 65.3, "style": "Comic", "text": "ズザザッ"},
+        {"start": 64.5, "end": 67.9, "style": "Tora", "text": "トラ「ち、ちがうんだ！これには深い事情が…」"}
+      ],
+      "sfx": [
+        {"t": 64.0, "key": "cat_meow_panic_tora", "gain_db": -10},
+        {"t": 64.2, "dur": 1.4, "key": "paw_scramble", "gain_db": -8},
+        {"t": 66.2, "key": "box_thud", "gain_db": -10},
+        {"t": 64.0, "dur": 8.0, "key": "bgm_comic", "gain_db": -20}
+      ]
+    },
+    {
+      "id": "S21", "scene": 5, "start": 68.0, "end": 72.0, "camera": "PHONE", "cats": ["TORA", "SHIRO", "MIKE"],
+      "action_ja": "床まであるカーテンの裏に隠れるトラ。しっぽと後ろ足だけが見えている。手前でシロとミケが並んでカーテンを見つめる。",
+      "prompt": "A floor-length beige curtain with a cat hiding behind it: only the ringed orange tail and orange hind paws of {TORA} stick out from under the curtain. In the foreground, seen from behind, {SHIRO} and {MIKE} sit side by side staring at the curtain.",
+      "subs": [
+        {"start": 68.4, "end": 71.8, "style": "Aside", "text": "（隠れきれていない）"}
+      ],
+      "sfx": [
+        {"t": 68.3, "key": "comic_pluck", "gain_db": -14}
+      ]
+    },
+    {
+      "id": "S22", "scene": 6, "start": 72.0, "end": 77.0, "camera": "PHONE", "cats": ["SHIRO"],
+      "action_ja": "窓辺にひとりで座るシロへゆっくり寄る。逆光で、目線は下。",
+      "prompt": "Slow push-in on {SHIRO} sitting alone on a windowsill, backlit by soft afternoon light, gaze lowered to the floor, ears relaxed but slightly down, quiet melancholy mood.",
+      "subs": [
+        {"start": 72.4, "end": 76.8, "style": "Shiro", "text": "シロ「知らなかった。妻がいるなんて、一度も…」"}
+      ],
+      "sfx": [
+        {"t": 72.0, "dur": 9.0, "key": "amb_room_day", "gain_db": -26},
+        {"t": 72.0, "dur": 9.0, "key": "bgm_sad", "gain_db": -20}
+      ]
+    },
+    {
+      "id": "S23", "scene": 6, "start": 77.0, "end": 81.0, "camera": "PHONE", "cats": ["MIKE"],
+      "action_ja": "ミケが正面に座り、カメラをまっすぐ見つめる。静かな圧。",
+      "prompt": "{MIKE} sits facing the camera directly, perfectly still, calm unblinking stare into the lens, slight slow push-in.",
+      "subs": [
+        {"start": 77.3, "end": 80.8, "style": "Mike", "text": "ミケ「知らなかった、で済むと思う？」"}
+      ],
+      "sfx": [
+        {"t": 77.2, "key": "cat_meow_calm_mike", "gain_db": -14}
+      ]
+    },
+    {
+      "id": "S24", "scene": 6, "start": 81.0, "end": 87.0, "camera": "CARD", "cats": [], "bg": "#101418",
+      "action_ja": "暗い背景に問いのテロップ（生成不要）。",
+      "prompt": "",
+      "subs": [
+        {"start": 81.3, "end": 86.9, "style": "CardQ", "text": "Q. 既婚者だと知らずに交際していたら\\N慰謝料を払う責任はある？"},
+        {"start": 83.0, "end": 86.9, "style": "CardSub", "text": "「知らなかった」と「気づけたはず」――何が違う？"}
+      ],
+      "sfx": [
+        {"t": 81.0, "dur": 6.0, "key": "drone_question", "gain_db": -16},
+        {"t": 81.2, "key": "tension_hit_small", "gain_db": -10}
+      ]
+    },
+    {
+      "id": "S25", "scene": 6, "start": 87.0, "end": 90.0, "camera": "CARD", "cats": [], "bg": "#000000",
+      "action_ja": "エンドカード（生成不要）。",
+      "prompt": "",
+      "subs": [
+        {"start": 87.1, "end": 90.0, "style": "CardQ", "text": "解説編へつづく"},
+        {"start": 87.1, "end": 90.0, "style": "Notice", "text": "※この動画はAIで生成した創作再現です。実在の人物・動物・事件とは関係ありません。"}
+      ],
+      "sfx": [
+        {"t": 87.0, "key": "end_sting", "gain_db": -10}
+      ]
+    }
+  ]
+}
